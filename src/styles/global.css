@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Aurella";
+    src: url("../assets/fonts/Aurella.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    height: 100vh;
+    background-color: #F6F6F6;
+}
+
+@layer base {
+    * {
+        @apply text-weddingGreen;
+    }
+    
+    h1 {
+        @apply text-3xl;
+    }
+}

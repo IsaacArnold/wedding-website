@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { FiMenu } from "react-icons/fi";
 
 const Navigation = () => {
   const handleClick = () => {
@@ -13,23 +14,16 @@ const Navigation = () => {
       <div>
         <Link
           to="/"
-          className="flex items-center flex-shrink-0 text-white mr-6"
+          className="flex items-center flex-shrink-0 text-weddingGreen mr-6"
         >
-          <span className="font-semibold text-xl tracking-tight">
-            Isaac & Ness
+          <span className="font-Aurella text-3xl tracking-tight">
+            Isaac & Vanessa
           </span>
         </Link>
       </div>
       <div className="block lg:hidden" onClick={handleClick}>
-        <button className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+        <button className="flex items-center px-3 py-2">
+          <FiMenu className="w-6 h-8 text-weddingGreen" />
         </button>
       </div>
       <div
