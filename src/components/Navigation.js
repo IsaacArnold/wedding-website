@@ -1,36 +1,73 @@
 import React from "react";
 import { Link } from "gatsby";
+import styled from "styled-components";
 import { FiMenu } from "react-icons/fi";
 
 const Navigation = () => {
   const handleClick = () => {
     // Toggle the hidden class
     document.getElementById("dropdown").classList.toggle("hidden");
-    document.getElementById("dropdown").classList.toggle("block");
   };
 
+  const NavStyles = styled.nav`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+  `;
+
+  const MainLink = styled(Link)`
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    margin-right: 25px;
+    text-decoration: none;
+    color: var(--weddingGreen);
+    font-size: 1.75rem;
+    span {
+      font-family: "Aurella", sans-serif;
+    }
+  `;
+
+  const HamburgerContainer = styled.div`
+    @media (min-width: 1024px) {
+      display: none;
+    }
+    svg {
+      width: 25px;
+      height: 40px;
+      color: var(--weddingGreen);
+    }
+  `;
+
+  const MobileNavContainer = styled.div`
+    width: 100%;
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      width: auto;
+      flex-grow: 0;
+    }
+    .inner-mobile-nav {
+    }
+    &.hidden {
+      display: none;
+    }
+  `;
+
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-dark-bg p-6">
+    <NavStyles>
       <div>
-        <Link
-          to="/"
-          className="flex items-center flex-shrink-0 text-weddingGreen mr-6"
-        >
-          <span className="font-Aurella text-3xl tracking-tight">
-            Isaac & Vanessa
-          </span>
-        </Link>
+        <MainLink to="/">
+          <span>Isaac & Vanessa</span>
+        </MainLink>
       </div>
-      <div className="block lg:hidden" onClick={handleClick}>
-        <button className="flex items-center px-3 py-2">
-          <FiMenu className="w-6 h-8 text-weddingGreen" />
-        </button>
-      </div>
-      <div
-        className="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto lg:flex-grow-0"
-        id="dropdown"
-      >
-        <div className="text-sm lg:flex-grow">
+      <HamburgerContainer onClick={handleClick}>
+        <FiMenu />
+      </HamburgerContainer>
+      <MobileNavContainer id="dropdown" className="hidden">
+        <div className="inner-mobile-nav">
           <a
             href="#responsive-header"
             className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
@@ -50,8 +87,8 @@ const Navigation = () => {
             Here!
           </a>
         </div>
-      </div>
-    </nav>
+      </MobileNavContainer>
+    </NavStyles>
   );
 };
 
