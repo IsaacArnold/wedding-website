@@ -1,27 +1,16 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import { StaticImage } from "gatsby-plugin-image";
+import KiwiKangaroo from "../components/KiwiKangaroo";
 
 const IndexPage = () => (
   <Layout>
     <div className="font-PlayfairDisplay flex flex-col justify-center items-center text-center">
       <div className="grid grid-cols-3 grid-rows-1">
-        <StaticImage
-          src="../images/nyc.jpeg"
-          alt="Us standing in Times Square, New York City"
-          placeholder="blurred"
-        />
-        <StaticImage
-          src="../images/chch.JPG"
-          alt="Us in Christchurch, New Zealand"
-          placeholder="blurred"
-        />
-        <StaticImage
-          src="../images/Engagement1_edit.JPG"
-          alt="Us on the day we got engaged"
-          placeholder="blurred"
-        />
+        {/* <div className="bg-[url('../images/nyc.jpeg')] w-[120px] h-[150px] bg-cover bg-center"></div>
+        <div className="bg-[url('../images/chch.JPG')] w-[120px] h-[150px] bg-cover bg-center"></div>
+        <div className="bg-[url('../images/Engagement1_edit.JPG')] w-[120px] h-[150px] bg-cover bg-center"></div> */}
       </div>
+
       <div className="w-5/6">
         <div className="my-10">
           <h1 className="mb-5">We're tying the knot</h1>
@@ -45,6 +34,9 @@ const IndexPage = () => (
             know!
           </p>
         </div>
+      </div>
+      <div className="my-10">
+        <KiwiKangaroo />
       </div>
     </div>
   </Layout>
