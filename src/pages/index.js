@@ -61,7 +61,8 @@ const ContentContainer = styled.div`
   width: 90%;
   .heading,
   .body {
-    margin: 2.5rem 0;
+    width: 85%;
+    margin: 2.5rem auto;
   }
   .heading {
     h1 {

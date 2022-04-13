@@ -24,9 +24,12 @@ const Navigation = () => {
     margin-right: 25px;
     text-decoration: none;
     color: var(--weddingGreen);
-    font-size: 1.75rem;
+    font-size: 2rem;
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
     span {
-      font-family: "Aurella", sans-serif;
+      font-family: "Beau Rivage", cursive;
     }
   `;
 
