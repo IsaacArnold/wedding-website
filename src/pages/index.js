@@ -6,6 +6,7 @@ import nyc from "../images/nyc.jpeg";
 import brick from "../images/brick.png";
 import chch from "../images/chch-2.png";
 import engagement from "../images/engagement-2.png";
+import Divider from "../components/Divider";
 
 const PageContainer = styled.div`
   display: flex;
@@ -79,13 +80,6 @@ const ContentContainer = styled.div`
       margin: 1.25rem 0;
     }
   }
-  .divider {
-    width: 58%;
-    height: 1px;
-    background-color: var(--weddingGreen);
-    margin: auto;
-    max-width: 300px;
-  }
 `;
 
 const KiwiKanga = styled.div`
@@ -108,7 +102,7 @@ const IndexPage = () => (
           <p>on Saturday 22nd October 2022</p>
           <p>at the Wynnum Golf Club, Brisbane</p>
         </div>
-        <div className="divider"></div>
+        <Divider width="58%" />
         <div className="body">
           <p>
             Welcome to our wedding website - we can’t wait to celebrate our
