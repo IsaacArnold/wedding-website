@@ -14,6 +14,7 @@ exports.createPages = async ({ actions }) => {
       context: {
         partyName: party.partyName,
         partyMembers: party.partyMembers,
+        displayName: party.displayName,
       },
     });
   });

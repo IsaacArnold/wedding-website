@@ -1,226 +1,282 @@
 [
     {
         "partyName": "McKenzies",
-        "partyMembers": ["Iain", "Kathy"]
+        "partyMembers": ["Iain", "Kathy"],
+        "displayName": "Iain & Kathy"
     },
     {
         "partyName": "Norm",
-        "partyMembers": ["Norm"]
+        "partyMembers": ["Norm"],
+        "displayName": "Norm"
     },
     {
         "partyName": "Sandy",
-        "partyMembers": ["Sandy"]
+        "partyMembers": ["Sandy"],
+        "displayName": "Sandy"
     },
     {
         "partyName": "David",
-        "partyMembers": ["David"]
+        "partyMembers": ["David"],
+        "displayName": "David"
     },
     {
         "partyName": "D&J",
-        "partyMembers": ["Dickie", "Jane"]
+        "partyMembers": ["Dickie", "Jane"],
+        "displayName": "Dickie & Jane"
     },
     {
         "partyName": "WatsonF",
-        "partyMembers": ["Fiona", "Andrew"]
+        "partyMembers": ["Fiona", "Andrew"],
+        "displayName": "Fiona & Andrew"
     },
     {
         "partyName": "WatsonM",
-        "partyMembers": ["Mike", "Ash"]
+        "partyMembers": ["Mike", "Ash"],
+        "displayName": "Mike & Ash"
     },
     {
         "partyName": "Watson-Eykel",
-        "partyMembers": ["James", "Emma"]
+        "partyMembers": ["James", "Emma"],
+        "displayName": "James & Emma"
     },
     {
         "partyName": "Sue",
-        "partyMembers": ["Sue"]
+        "partyMembers": ["Sue"],
+        "displayName": "Sue"
     },
     {
         "partyName": "TonyV",
-        "partyMembers": ["Tony"]
+        "partyMembers": ["Tony"],
+        "displayName": "Tony"
     },
     {
         "partyName": "TaylorV",
-        "partyMembers": ["Taylor"]
+        "partyMembers": ["Taylor"],
+        "displayName": "Taylor"
     },
     {
         "partyName": "SophieE",
-        "partyMembers": ["Sophie"]
+        "partyMembers": ["Sophie"],
+        "displayName": "Sophie"
     },
     {
         "partyName": "HannahH",
-        "partyMembers": ["Hannah"]
+        "partyMembers": ["Hannah"],
+        "displayName": "Hannah"
     },
     {
         "partyName": "Dan&Ash",
-        "partyMembers": ["Dan", "Ash"]
+        "partyMembers": ["Dan", "Ash"],
+        "displayName": "Dan & Ash"
     },
     {
-        "partyName": "JessSon",
-        "partyMembers": ["Jess"]
+        "partyName": "JesSon",
+        "partyMembers": ["Jes"],
+        "displayName": "Jes"
     },
     {
         "partyName": "Claire",
-        "partyMembers": ["Claire"]
+        "partyMembers": ["Claire"],
+        "displayName": "Claire"
     },
     {
         "partyName": "Alex&Brandon",
-        "partyMembers": ["Alex", "Brandon"]
+        "partyMembers": ["Alex", "Brandon"],
+        "displayName": "Alex & Brandon"
     },
     {
         "partyName": "Zoe",
-        "partyMembers": ["Zoe"]
+        "partyMembers": ["Zoe"],
+        "displayName": "Zoe"
     },
     {
         "partyName": "Paige",
-        "partyMembers": ["Paige"]
+        "partyMembers": ["Paige"],
+        "displayName": "Paige"
     },
     {
         "partyName": "Hebe",
-        "partyMembers": ["Hebe"]
+        "partyMembers": ["Hebe"],
+        "displayName": "Hebe"
     },
     {
         "partyName": "Brent&Lynette",
-        "partyMembers": ["Brent", "Lynette"]
+        "partyMembers": ["Brent", "Lynette"],
+        "displayName": "Brent & Lynette"
     },
     {
         "partyName": "Narelle",
-        "partyMembers": ["Narelle"]
+        "partyMembers": ["Narelle"],
+        "displayName": "Narelle"
     },
     {
         "partyName": "Andrew&Vicki",
-        "partyMembers": ["Andrew", "Vicki"]
+        "partyMembers": ["Andrew", "Vicki"],
+        "displayName": "Andrew & Vicki"
     },
     {
         "partyName": "Geoff&Sashi",
-        "partyMembers": ["Geoff", "Sashi"]
+        "partyMembers": ["Geoff", "Sashi"],
+        "displayName": "Geoff & Sashi"
     },
     {
         "partyName": "Steve&Row",
-        "partyMembers": ["Steve", "Row"]
+        "partyMembers": ["Steve", "Row"],
+        "displayName": "Steve & Row"
     },
     {
         "partyName": "Julie",
-        "partyMembers": ["Julie"]
+        "partyMembers": ["Julie"],
+        "displayName": "Julie"
     },
     {
         "partyName": "Deb",
-        "partyMembers": ["Deb"]
+        "partyMembers": ["Deb"],
+        "displayName": "Deb"
     },
     {
         "partyName": "Lyn&Bret",
-        "partyMembers": ["Lyn", "Bret"]
+        "partyMembers": ["Lyn", "Bret"],
+        "displayName": "Lyn & Bret"
     },
     {
         "partyName": "Val",
-        "partyMembers": ["Val"]
+        "partyMembers": ["Val"],
+        "displayName": "Val"
     },
     {
         "partyName": "Helen&Errol",
-        "partyMembers": ["Helen", "Errol"]
+        "partyMembers": ["Helen", "Errol"],
+        "displayName": "Helen & Errol"
     },
     {
         "partyName": "SteedenD",
-        "partyMembers": ["David", "Jaquel", "Van", "Leo"]
+        "partyMembers": ["David", "Jaquel", "Van", "Leo"],
+        "displayName": "David, Jaquel, Van & Leo"
     },
     {
         "partyName": "SteedenP",
-        "partyMembers": ["Paul", "Amanda", "Kit", "Sunny"]
+        "partyMembers": ["Paul", "Amanda", "Kit", "Sunny"],
+        "displayName": "Paul, Amanda, Kit & Sunny"
     },
     {
         "partyName": "JessSing",
-        "partyMembers": ["Jess"]
+        "partyMembers": ["Jess"],
+        "displayName": "Jess"
     },
     {
         "partyName": "LouSing",
-        "partyMembers": ["Lou"]
+        "partyMembers": ["Lou"],
+        "displayName": "Lou"
     },
     {
         "partyName": "CameronS",
-        "partyMembers": ["Cameron"]
+        "partyMembers": ["Cameron"],
+        "displayName": "Cameron"
     },
     {
         "partyName": "JessD",
-        "partyMembers": ["Jess"]
+        "partyMembers": ["Jess"],
+        "displayName": "Jess"
     },
     {
         "partyName": "Sergiacomi",
-        "partyMembers": ["Toni", "Serge"]
+        "partyMembers": ["Toni", "Serge"],
+        "displayName": "Toni & Serge"
     },
     {
         "partyName": "Salmons",
-        "partyMembers": ["Jessie", "Daniel"]
+        "partyMembers": ["Jessie", "Daniel"],
+        "displayName": "Jessie & Daniel"
     },
     {
         "partyName": "Eli",
-        "partyMembers": ["Eli"]
+        "partyMembers": ["Eli"],
+        "displayName": "Eli"
     },
     {
         "partyName": "LangW",
-        "partyMembers": ["Ruth", "Wayne"]
+        "partyMembers": ["Ruth", "Wayne"],
+        "displayName": "Ruth & Wayne"
     },
     {
         "partyName": "LangD",
-        "partyMembers": ["David", "Jordan"]
+        "partyMembers": ["David", "Jordan"],
+        "displayName": "David & Jordan"
     },
     {
         "partyName": "LangB",
-        "partyMembers": ["Brendan", "Khole"]
+        "partyMembers": ["Brendan", "Khole"],
+        "displayName": "Brendan & Khloe"
     },
     {
         "partyName": "LangG",
-        "partyMembers": ["Gabe", "Tom"]
+        "partyMembers": ["Gabe", "Tom"],
+        "displayName": "Gabe & Tom"
     },
     {
         "partyName": "Holmes",
-        "partyMembers": ["Peter", "Leann"]
+        "partyMembers": ["Peter", "Leann"],
+        "displayName": "Peter & Leann"
     },
     {
         "partyName": "Peakes",
-        "partyMembers": ["Jenny", "Steve", "Jordan", "Olivia"]
+        "partyMembers": ["Jenny", "Steve", "Jordan", "Olivia"],
+        "displayName": "Jenny, Steve, Jordan & Olivia"
     },
     {
         "partyName": "Korffs",
-        "partyMembers": ["Nicci", "Michael"]
+        "partyMembers": ["Nicci", "Michael"],
+        "displayName": "Nicci & Michael"
     },
     {
         "partyName": "Jabore",
-        "partyMembers": ["Nick", "Jocelyn"]
+        "partyMembers": ["Nick", "Jocelyn"],
+        "displayName": "Uncle Nick & Aunty Joc"
     },
     {
         "partyName": "ZachB",
-        "partyMembers": ["Zach"]
+        "partyMembers": ["Zach"],
+        "displayName": "Zach"
     },
     {
         "partyName": "HarryB",
-        "partyMembers": ["Harry"]
+        "partyMembers": ["Harry"],
+        "displayName": "Harry"
     },
     {
         "partyName": "MattB",
-        "partyMembers": ["Matt"]
+        "partyMembers": ["Matt"],
+        "displayName": "Matt"
     },
     {
         "partyName": "Michaleks",
-        "partyMembers": ["Angela", "Rob", "Hank", "Jack", "Luke", "Matt"]
+        "partyMembers": ["Angela", "Rob", "Hank", "Jack", "Luke", "Matt"],
+        "displayName": "Angela, Rob, Hank, Jack, Luke & Matt"
     },
     {
         "partyName": "Spencer",
-        "partyMembers": ["Spencer"]
+        "partyMembers": ["Spencer"],
+        "displayName": "Spencer"
     },
     {
         "partyName": "Jordan&Kelly",
-        "partyMembers": ["Jordan", "Kelly"]
+        "partyMembers": ["Jordan", "Kelly"],
+        "displayName": "Jordan & Kelly"
     },
     {
         "partyName": "Justin&Steph",
-        "partyMembers": ["Justin", "Steph"]
+        "partyMembers": ["Justin", "Steph"],
+        "displayName": "Justin & Steph"
     },
     {
         "partyName": "Matt&Lucy",
-        "partyMembers": ["Matt", "Lucy"]
+        "partyMembers": ["Matt", "Lucy"],
+        "displayName": "Matt & Lucy"
     },
     {
         "partyName": "Nathan&Madi",
-        "partyMembers": ["Nathan", "Madi"]
+        "partyMembers": ["Nathan", "Madi"],
+        "displayName": "Nathan & Madi"
     }
 ]

@@ -13,7 +13,7 @@ const Typography = createGlobalStyle`
     }
 
     h1, h2, h3 {
-        font-family: 'Beau Rivage', cursive;
+        font-family: "Beau Rivage", cursive;
     }
 
 `;
