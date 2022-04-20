@@ -16,6 +16,10 @@ const Typography = createGlobalStyle`
         font-family: "Beau Rivage", cursive;
     }
 
+    h1 {
+      font-size: 2.75rem;
+    }
+
 `;
 
 export default Typography;
