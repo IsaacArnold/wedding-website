@@ -17,7 +17,11 @@ const Typography = createGlobalStyle`
     }
 
     h1 {
-      font-size: 2.75rem;
+      font-size: 32px;
+    }
+
+    p {
+        font-size: 18px;
     }
 
 `;

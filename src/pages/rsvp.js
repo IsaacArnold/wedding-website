@@ -23,6 +23,7 @@ const ContentContainer = styled.div`
   .heading {
     h1 {
       letter-spacing: 3px;
+      font-size: 48px;
     }
   }
   .body {
@@ -57,6 +58,7 @@ const FormDiv = styled.div`
       margin-right: 15px;
       display: grid;
       place-content: center;
+      margin-top: 2px;
       &::before {
         content: "";
         width: 18px;
