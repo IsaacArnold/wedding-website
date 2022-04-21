@@ -15,10 +15,12 @@ const PageContainer = styled.div`
 
 const ContentContainer = styled.div`
   width: 90%;
+  margin-top: 30px;
   .heading,
   .body {
     width: 85%;
     margin: 2.5rem auto;
+    margin-top: 0px;
   }
   .heading {
     h1 {
@@ -149,7 +151,7 @@ const RSVP = () => (
                   type="radio"
                   name="attendance"
                   id="attendanceNo"
-                  value="yes"
+                  value="No"
                   required={true}
                 />
                 <label htmlFor="attendanceNo">No</label>
