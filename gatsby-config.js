@@ -6,6 +6,9 @@ module.exports = {
     author: "Isaac Arnold",
     siteUrl: "https://gatsbystarterdefaultsource.gatsbyjs.io/",
   },
+  flags: {
+    DEV_SSR: true,
+  },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-image",
