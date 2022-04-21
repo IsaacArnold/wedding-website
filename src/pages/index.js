@@ -21,6 +21,7 @@ const ImageBanner = styled.div`
   grid-template-columns: repeat(3, 110px);
   grid-template-rows: 120px;
   grid-gap: 5px;
+  margin-top: 30px;
   .nyc {
     background-image: url(${nyc});
     background-size: cover;
@@ -49,11 +50,11 @@ const ImageBanner = styled.div`
     }
   }
   @media (min-width: 650px) {
-    grid-template-columns: repeat(4, 150px);
-    grid-template-rows: 150px;
+    grid-template-columns: repeat(4, 172px);
+    grid-template-rows: 180px;
   }
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 230px);
+    grid-template-columns: repeat(4, 240px);
     grid-template-rows: 220px;
   }
 `;
@@ -64,6 +65,10 @@ const ContentContainer = styled.div`
   .body {
     width: 85%;
     margin: 2.5rem auto;
+    max-width: 544px;
+    @media (min-width: 768px) {
+      width: 80%;
+    }
   }
   .heading {
     h1 {
