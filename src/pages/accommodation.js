@@ -16,13 +16,14 @@ const PageContainer = styled.div`
 const ContentContainer = styled.div`
   width: 90%;
   margin-top: 30px;
+  h1 {
+    font-size: 48px;
+  }
   .heading,
   .accomDiv {
     width: 85%;
     margin: 2.5rem auto;
     margin-top: 0px;
-  }
-  .heading {
   }
   .accomDiv,
   .suburbs {

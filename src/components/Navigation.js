@@ -52,7 +52,9 @@ const Navigation = () => {
   `;
 
   const MobileNavContainer = styled.div`
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    background-shadow: var(--shadow-elevation-medium);
     @media (min-width: 1024px) {
       display: flex;
       align-items: center;
@@ -60,9 +62,25 @@ const Navigation = () => {
       flex-grow: 0;
     }
     .inner-mobile-nav {
+      margin-top: 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
     }
     &.hidden {
       display: none;
+    }
+  `;
+
+  const MobileLink = styled(Link)`
+    text-decoration: none;
+    color: var(--weddingGreen);
+    margin-bottom: 10px;
+    font-size: 18px;
+    &:nth-child(6) {
+      margin-bottom: 20px;
     }
   `;
 
@@ -107,12 +125,12 @@ const Navigation = () => {
       </HamburgerContainer>
       <MobileNavContainer id="dropdown" className="hidden">
         <div className="inner-mobile-nav">
-          <a href="#responsive-header">Your Invitation</a>
-          <a href="#responsive-header">RSVP</a>
-          <a href="#responsive-header">Venue</a>
-          <a href="#responsive-header">Accommodation</a>
-          <a href="#responsive-header">Wedding Party</a>
-          <a href="#responsive-header">Gifting</a>
+          <MobileLink to="">Your Invitation</MobileLink>
+          <MobileLink to="/rsvp">RSVP</MobileLink>
+          <MobileLink to="/venue">Venue</MobileLink>
+          <MobileLink to="/accommodation">Accommodation</MobileLink>
+          <MobileLink to="/wedding-party">Wedding Party</MobileLink>
+          <MobileLink to="/gifting">Gifting</MobileLink>
         </div>
       </MobileNavContainer>
       <LaptopNavContainer>
