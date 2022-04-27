@@ -15,6 +15,7 @@ exports.createPages = async ({ actions }) => {
         partyName: party.partyName,
         partyMembers: party.partyMembers,
         displayName: party.displayName,
+        slug: `/invitation/${party.partyName}`,
       },
     });
   });

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
@@ -46,7 +46,8 @@ const KiwiKanga = styled.div`
 `;
 
 const invitationPage = ({ pageContext }) => {
-  const { partyName, partyMembers, displayName } = pageContext;
+  const { partyName, partyMembers, displayName, slug } = pageContext;
+  // console.log(slug);
   return (
     <Layout>
       <PageContainer>
