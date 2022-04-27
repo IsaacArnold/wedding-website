@@ -4,7 +4,7 @@ exports.createPages = async ({ actions }) => {
   const { createPage } = actions;
   const parties = require("./src/data/guestList.json");
   const invitationPageTemplate = path.resolve(
-    `src/templates/invitationPage.js`
+    `src/templates/InvitationPage.js`
   );
 
   parties.forEach((party) => {

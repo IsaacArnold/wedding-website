@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { FiMenu } from "react-icons/fi";
 import Divider from "./Divider";
 
+//#region Page styles
 const NavStyles = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -106,13 +107,13 @@ const LaptopLink = styled(Link)`
     margin-right: 50px;
   }
 `;
+//#endregion
 
 const Navigation = () => {
   const handleClick = () => {
     // Toggle the hidden class
     document.getElementById("dropdown").classList.toggle("hidden");
   };
-
   return (
     <NavStyles>
       <div>

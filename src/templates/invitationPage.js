@@ -3,7 +3,9 @@ import styled from "styled-components";
 import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Layout from "../components/Layout";
+import { URLContext } from "../context";
 
+//#region Page styles
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -44,13 +46,16 @@ const MembersDiv = styled.div`
 const KiwiKanga = styled.div`
   margin: 2.5rem 0;
 `;
+//#endregion
 
-const invitationPage = ({ pageContext }) => {
+const InvitationPage = ({ pageContext }) => {
   const { partyName, partyMembers, displayName, slug } = pageContext;
+  const { url, setURL } = useContext(URLContext);
   // console.log(slug);
+  console.log(url);
   return (
     <Layout>
-      <PageContainer>
+      <PageContainer onLoad={() => setURL(slug)}>
         <Divider width="80px" />
         <h1>You're Invited!</h1>
         <Header>
@@ -84,4 +89,4 @@ const invitationPage = ({ pageContext }) => {
   );
 };
 
-export default invitationPage;
+export default InvitationPage;
