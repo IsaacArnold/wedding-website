@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import { FiMenu } from "react-icons/fi";
 import Divider from "./Divider";
+import { useLocation } from "@reach/router";
 
 //#region Page styles
 const NavStyles = styled.nav`
@@ -109,7 +110,17 @@ const LaptopLink = styled(Link)`
 `;
 //#endregion
 
+let urlArray = [];
+
 const Navigation = () => {
+  const history = useLocation();
+  const pathname = history.pathname;
+  console.log(history);
+
+  useEffect(() => {
+    urlArray.push(pathname);
+  }, []);
+
   const handleClick = () => {
     // Toggle the hidden class
     document.getElementById("dropdown").classList.toggle("hidden");
@@ -126,7 +137,7 @@ const Navigation = () => {
       </HamburgerContainer>
       <MobileNavContainer id="dropdown" className="hidden">
         <div className="inner-mobile-nav">
-          <MobileLink to="">Your Invitation</MobileLink>
+          <MobileLink to={urlArray[0]}>Your Invitation</MobileLink>
           <MobileLink to="/rsvp">RSVP</MobileLink>
           <MobileLink to="/venue">Venue</MobileLink>
           <MobileLink to="/accommodation">Accommodation</MobileLink>
@@ -137,7 +148,7 @@ const Navigation = () => {
       <LaptopNavContainer>
         <div className="inner-laptop-nav">
           <Divider width="60px" />
-          <LaptopLink to="/invitation">Your Invitation</LaptopLink>
+          <LaptopLink to={urlArray[0]}>Your Invitation</LaptopLink>
           <LaptopLink to="/rsvp">RSVP</LaptopLink>
           <LaptopLink to="/venue">Venue</LaptopLink>
           <LaptopLink to="/accommodation">Accommodation</LaptopLink>
