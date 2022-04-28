@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Divider from "../components/Divider";
 
+//#region Page styles
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -109,6 +110,7 @@ const FormDiv = styled.div`
 const KiwiKanga = styled.div`
   margin: 2.5rem 0;
 `;
+//#endregion
 
 const RSVP = () => (
   <Layout>

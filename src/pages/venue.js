@@ -4,6 +4,7 @@ import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Layout from "../components/Layout";
 
+//#region Page styles
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,6 +54,7 @@ const ContentContainer = styled.div`
 const KiwiKanga = styled.div`
   margin: 2.5rem 0;
 `;
+//#endregion
 
 const Venue = () => {
   return (
