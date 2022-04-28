@@ -206,7 +206,7 @@ const RSVP = () => (
               <textarea
                 name="songRequest"
                 id="songRequest"
-                placeholder="It's Raining Men"
+                placeholder="Its Raining Men"
                 required={true}
               />
             </div>
