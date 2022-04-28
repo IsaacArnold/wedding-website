@@ -48,7 +48,7 @@ const KiwiKanga = styled.div`
 //#endregion
 
 const InvitationPage = ({ pageContext }) => {
-  const { partyName, partyMembers, displayName, slug } = pageContext;
+  const { displayName } = pageContext;
   return (
     <Layout>
       <PageContainer>
