@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 
+//#region Page styles
 const KiwiKangarooContainer = styled.div`
   display: flex;
   align-items: center;
@@ -16,6 +17,7 @@ const KiwiKangarooContainer = styled.div`
     }
   }
 `;
+//#endregion
 
 const KiwiKangaroo = () => {
   return (

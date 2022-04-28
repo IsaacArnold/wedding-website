@@ -8,6 +8,7 @@ import chch from "../images/chch-2.png";
 import engagement from "../images/engagement-2.png";
 import Divider from "../components/Divider";
 
+//#region Page styles
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -90,6 +91,7 @@ const ContentContainer = styled.div`
 const KiwiKanga = styled.div`
   margin: 2.5rem 0;
 `;
+//#endregion
 
 const IndexPage = () => (
   <Layout>
