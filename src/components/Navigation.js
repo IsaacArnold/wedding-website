@@ -115,7 +115,6 @@ let urlArray = [];
 const Navigation = () => {
   const history = useLocation();
   const pathname = history.pathname;
-  console.log(history);
 
   useEffect(() => {
     urlArray.push(pathname);
