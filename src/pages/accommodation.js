@@ -65,16 +65,19 @@ const Accommodation = () => {
         <ContentContainer>
           <div className="heading">
             <h1>Accommodation</h1>
+            <p>
+              If you are joining us from out of town and looking for
+              accommodation, you could stay at a local motel, book an AirBnb or
+              stay in Brisbane CBD.
+            </p>
+            <p>Here are a few of our recommendations.</p>
           </div>
 
           <div className="accomDiv">
             <h2>Manly Marina Cove Motel</h2>
-            <ul>
-              <li>
-                There is ample free parking available close to the ceremony
-                entrance
-              </li>
-            </ul>
+            <a href="https://www.manlymarinacove.com/" target="_blank">
+              Website link
+            </a>
             <div className="map">
               <iframe
                 title="Google maps iframe"
@@ -90,10 +93,9 @@ const Accommodation = () => {
 
           <div className="accomDiv">
             <h2>Pelican's Nestle Inn</h2>
-            <ul>
-              <li>Right on the Wynnum Espliande</li>
-              <li>Very close to venue</li>
-            </ul>
+            <a href="http://www.pelicansnestleinn.com.au/" target="_blank">
+              Website link
+            </a>
             <div className="map">
               <iframe
                 title="Google maps iframe"
@@ -109,10 +111,12 @@ const Accommodation = () => {
 
           <div className="accomDiv">
             <h2>Quest Cannon Hill</h2>
-            <ul>
-              <li>Half-way between venue and Brisbane CBD</li>
-              <li>Plenty of rooms choice</li>
-            </ul>
+            <a
+              href="https://www.questapartments.com.au/properties/qld/cannon-hill/quest-cannon-hill/overview"
+              target="_blank"
+            >
+              Website link
+            </a>
             <div className="map">
               <iframe
                 title="Google maps iframe"
@@ -126,13 +130,27 @@ const Accommodation = () => {
             </div>
           </div>
           <div className="suburbs">
-            <h2>Suburbs within 20 minutes, if you're looking for an AirBnb:</h2>
+            <h2>Suburbs close by, if you're looking for an AirBnb:</h2>
+            <p>
+              Feel free to get in touch if you want to check with us before
+              booking.
+            </p>
             <ul>
               <li>Wynnum</li>
               <li>Manly/Manly West</li>
-              <li>Lota</li>
               <li>Carindale</li>
               <li>Morningside</li>
+              <li>Bulimba</li>
+            </ul>
+            <h2>Brisbane CBD</h2>
+            <p>
+              The city is only 30mins by car and offers plenty of choice in
+              accommodation. Here are some suburbs we recommend:
+            </p>
+            <ul>
+              <li>South Bank</li>
+              <li>Kangaroo Point</li>
+              <li>Inner City</li>
             </ul>
           </div>
         </ContentContainer>
