@@ -43,7 +43,8 @@ const ContentContainer = styled.div`
     }
   }
   .map {
-    margin-top: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     .iFrame {
       width: 290px;
       height: 250px;
@@ -67,12 +68,7 @@ const Venue = () => {
           </div>
           <div className="venueDiv">
             <h2>Wynnum Golf Club, Brisbane</h2>
-            <ul>
-              <li>
-                There is ample free parking available close to the ceremony
-                entrance
-              </li>
-            </ul>
+            <p>64 Stradbroke Ave, Wynnum, Qld, 4178</p>
             <div className="map">
               <iframe
                 title="Google maps iframe"
@@ -84,6 +80,11 @@ const Venue = () => {
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
+            <ul>
+              <li>On-site free parking</li>
+              <li>Lift access</li>
+              <li>Wynnum Central Train Station, within walking distance</li>
+            </ul>
           </div>
         </ContentContainer>
         <KiwiKanga>
