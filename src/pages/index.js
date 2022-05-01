@@ -113,19 +113,16 @@ const IndexPage = () => (
         <div className="body">
           <p>
             Welcome to our wedding website - we can’t wait to celebrate our
-            special day with you all.
+            special day with you.
           </p>
           <p>
-            We created this website as a convient and interactive way to share
-            all the important details in the lead up to our big day. You can
-            find out about our venue, some accommodation options (if you’re from
-            out of town) and also meet our amazing bridal party.
+            We've created this website as a convenient and interactive way to
+            share all the important details in the lead up to our big day. You
+            can find out more about our venue, accommodation options (if you’re
+            from out of town) and get to know our amazing bridal party.
           </p>
-          <p>Also, don’t forget to RSVP and request a song!</p>
-          <p>
-            So please have fun, take a look around and if you have any
-            questions, please let us know!
-          </p>
+          <p>Don’t forget to RSVP before ___ </p>
+          <p>Have fun, take a look around!</p>
         </div>
       </ContentContainer>
       <KiwiKanga>
