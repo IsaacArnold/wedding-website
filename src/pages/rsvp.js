@@ -121,12 +121,8 @@ const RSVP = () => (
           <h1>RSVP</h1>
         </div>
         <div className="body">
-          <p>Please RSVP by ___.</p>
-          <p>
-            If you have already let us know your RSVP, you won’t need to worry
-            about this page.
-          </p>
-          <p>Please also let us know any dietary requirements.</p>
+          <p>Please RSVP by completing the below forms before ___.</p>
+          <p>We can't wait to see you!</p>
         </div>
         <FormDiv>
           <form
@@ -192,12 +188,14 @@ const RSVP = () => (
             </div>
             <div className="form-section">
               <label htmlFor="dietary">
-                Please let us know your dietary requirements
+                If anyone in your party has any dietary requirements, please
+                list them below. Please include the name of the guest and then
+                their request.
               </label>
               <textarea
                 name="dietary"
                 id="dietary"
-                placeholder="Garlic"
+                placeholder="Isaac - vegetarian and garlic allergy"
                 required={true}
               />
             </div>
@@ -208,7 +206,7 @@ const RSVP = () => (
               <textarea
                 name="songRequest"
                 id="songRequest"
-                placeholder="Its Raining Men"
+                placeholder="Eagle Rock - Daddy Cool, Poi E - Patea Maori Club"
                 required={true}
               />
             </div>
