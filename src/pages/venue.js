@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Layout from "../components/Layout";
+import wgc from "../images/wgc.jpeg";
 
 //#region Page styles
 const PageContainer = styled.div`
@@ -47,6 +48,15 @@ const ContentContainer = styled.div`
       font-size: 18px;
       text-align: left;
     }
+    .wgc {
+      background-image: url(${wgc});
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100px;
+      height: 200px;
+      margin: 30px 0;
+    }
   }
   .map {
     margin-top: 30px;
@@ -78,6 +88,7 @@ const Venue = () => {
           <div className="venueDiv">
             <h2>Wynnum Golf Club, Brisbane</h2>
             <p>64 Stradbroke Ave, Wynnum, Qld, 4178</p>
+            <div className="wgc"></div>
             <div className="map">
               <iframe
                 title="Google maps iframe"

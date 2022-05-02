@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Layout from "../components/Layout";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Divider from "../components/Divider";
+import ContactForm from "../components/contact-form";
 
 //#region Page styles
 const PageContainer = styled.div`
@@ -129,95 +130,7 @@ const RSVP = () => (
           <p>We can't wait to see you!</p>
         </div>
         <FormDiv>
-          <form
-            name="Contact Form"
-            method="POST"
-            netlify-honeypot="bot-field"
-            data-netlify="true"
-          >
-            <input type="hidden" name="form-name" value="Contact Form" />
-            <div className="form-section">
-              <p>Attendance</p>
-              <div className="radioDiv">
-                <input
-                  type="radio"
-                  name="attendance"
-                  id="attendanceYes"
-                  value="yes"
-                  required={true}
-                />
-                <label htmlFor="attendanceYes">Yes</label>
-              </div>
-              <div className="radioDiv">
-                <input
-                  type="radio"
-                  name="attendance"
-                  id="attendanceNo"
-                  value="No"
-                  required={true}
-                />
-                <label htmlFor="attendanceNo">No</label>
-              </div>
-            </div>
-            <div className="form-section">
-              <label htmlFor="fullName">First Name (first in party)</label>
-              <input
-                type="text"
-                name="fullName"
-                id="fullName"
-                placeholder="Isaac"
-                required={true}
-              />
-            </div>
-            <div className="form-section">
-              <label htmlFor="lastName">Last Name (first in party)</label>
-              <input
-                type="text"
-                name="lastName"
-                id="lastName"
-                placeholder="Arnold"
-                required={true}
-              />
-            </div>
-            <div className="form-section">
-              <label htmlFor="partyMembers">
-                Please list other party members
-              </label>
-              <textarea
-                name="partyMembers"
-                id="partyMembers"
-                placeholder="Kit, Sunny"
-                required={true}
-              />
-            </div>
-            <div className="form-section">
-              <label htmlFor="dietary">
-                If anyone in your party has any dietary requirements, please
-                list them below. Please include the name of the guest and then
-                their request.
-              </label>
-              <textarea
-                name="dietary"
-                id="dietary"
-                placeholder="Isaac - vegetarian and garlic allergy"
-                required={true}
-              />
-            </div>
-            <div className="form-section">
-              <label htmlFor="songRequest">
-                Request a song - one per guest
-              </label>
-              <textarea
-                name="songRequest"
-                id="songRequest"
-                placeholder="Eagle Rock - Daddy Cool, Poi E - Patea Maori Club"
-                required={true}
-              />
-            </div>
-          </form>
-          <button type="submit" className="submitBtn">
-            Submit RSVP
-          </button>
+          <ContactForm />
         </FormDiv>
       </ContentContainer>
       <KiwiKanga>
