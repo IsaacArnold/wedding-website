@@ -24,6 +24,7 @@ const MainLink = styled(Link)`
   text-decoration: none;
   color: var(--weddingGreen);
   font-size: 2rem;
+  cursor: pointer;
   @media (min-width: 768px) {
     font-size: 2.5rem;
   }
@@ -74,6 +75,7 @@ const MobileLink = styled(Link)`
   color: var(--weddingGreen);
   margin-bottom: 10px;
   font-size: 18px;
+  cursor: pointer;
   &:nth-child(6) {
     margin-bottom: 20px;
   }
@@ -100,6 +102,7 @@ const LaptopLink = styled(Link)`
   color: var(--weddingGreen);
   margin-left: 40px;
   font-size: 18px;
+  cursor: pointer;
   &:nth-child(2) {
     margin-left: 50px;
   }
@@ -111,7 +114,8 @@ const LaptopLink = styled(Link)`
 
 const Navigation = () => {
   // Gets the url stored in localStorage to use in the nav
-  let retrievedUrl = localStorage.getItem("url");
+  let retrievedUrl =
+    typeof window !== "undefined" && window.localStorage.getItem("url");
   let personalisedLink = retrievedUrl;
 
   const handleClick = () => {

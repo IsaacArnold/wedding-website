@@ -52,7 +52,9 @@ const InvitationPage = ({ pageContext }) => {
 
   // Stores the slug in localStorage to use elsewhere
   const individualLink = slug;
-  localStorage.setItem("url", individualLink);
+
+  typeof window !== "undefined" &&
+    window.localStorage.setItem("url", individualLink);
 
   return (
     <Layout>
