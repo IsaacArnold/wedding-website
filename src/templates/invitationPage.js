@@ -48,7 +48,12 @@ const KiwiKanga = styled.div`
 //#endregion
 
 const InvitationPage = ({ pageContext }) => {
-  const { displayName } = pageContext;
+  const { displayName, slug } = pageContext;
+
+  // Stores the slug in localStorage to use elsewhere
+  const individualLink = slug;
+  localStorage.setItem("url", individualLink);
+
   return (
     <Layout>
       <PageContainer>
