@@ -118,7 +118,7 @@ const Navigation = () => {
 
   useEffect(() => {
     urlArray.push(pathname);
-  }, []);
+  }, [pathname]);
 
   const handleClick = () => {
     // Toggle the hidden class

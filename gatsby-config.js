@@ -1,13 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "Wedding Website",
+    title: "Isaac & Ness' Wedding Website",
+    titleTemplate: "%s | Isaac & Ness' Wedding",
     description:
       "Celebrate Isaac and Ness exchanging vows and find out all the information needed for our special day",
     author: "Isaac Arnold",
-    siteUrl: "https://gatsbystarterdefaultsource.gatsbyjs.io/",
-  },
-  flags: {
-    DEV_SSR: true,
+    siteUrl: "https://isaacandness.wedding/",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import KiwiKangaroo from "../components/KiwiKangaroo";
@@ -114,6 +115,9 @@ const KiwiKanga = styled.div`
 
 const RSVP = () => (
   <Layout>
+    <Helmet>
+      <title>RSVP | Isaac & Ness' Wedding Website</title>
+    </Helmet>
     <PageContainer>
       <Divider width="80px" />
       <ContentContainer>

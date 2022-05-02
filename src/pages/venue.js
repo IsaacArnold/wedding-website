@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
@@ -35,11 +36,16 @@ const ContentContainer = styled.div`
       font-family: "Playfair Display", "serif";
       font-weight: normal;
     }
+    p {
+      font-size: 14px;
+      margin-top: 0;
+    }
     ul {
       padding-left: 0px;
       width: 85%;
       margin: auto;
       font-size: 18px;
+      text-align: left;
     }
   }
   .map {
@@ -60,6 +66,9 @@ const KiwiKanga = styled.div`
 const Venue = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Venue | Isaac & Ness' Wedding Website</title>
+      </Helmet>
       <PageContainer>
         <Divider />
         <ContentContainer>

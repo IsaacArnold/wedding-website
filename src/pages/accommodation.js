@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
@@ -26,6 +27,19 @@ const ContentContainer = styled.div`
     margin: 2.5rem auto;
     margin-top: 0px;
   }
+  .accomDiv {
+    text-align: left;
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  .suburbs {
+    h2 {
+      &:last-of-type {
+        margin-top: 50px;
+      }
+    }
+  }
   .accomDiv,
   .suburbs {
     width: 90%;
@@ -33,7 +47,6 @@ const ContentContainer = styled.div`
     h2 {
       font-family: "Playfair Display", "serif";
       font-weight: normal;
-      text-align: left;
     }
     ul {
       padding-left: 0px;
@@ -60,6 +73,9 @@ const KiwiKanga = styled.div`
 const Accommodation = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Accommodation | Isaac & Ness' Wedding Website</title>
+      </Helmet>
       <PageContainer>
         <Divider />
         <ContentContainer>
@@ -75,7 +91,11 @@ const Accommodation = () => {
 
           <div className="accomDiv">
             <h2>Manly Marina Cove Motel</h2>
-            <a href="https://www.manlymarinacove.com/" target="_blank">
+            <a
+              href="https://www.manlymarinacove.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Website link
             </a>
             <div className="map">
@@ -93,7 +113,11 @@ const Accommodation = () => {
 
           <div className="accomDiv">
             <h2>Pelican's Nestle Inn</h2>
-            <a href="http://www.pelicansnestleinn.com.au/" target="_blank">
+            <a
+              href="http://www.pelicansnestleinn.com.au/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Website link
             </a>
             <div className="map">
@@ -114,6 +138,7 @@ const Accommodation = () => {
             <a
               href="https://www.questapartments.com.au/properties/qld/cannon-hill/quest-cannon-hill/overview"
               target="_blank"
+              rel="noreferrer"
             >
               Website link
             </a>
