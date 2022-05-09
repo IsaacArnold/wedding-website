@@ -34,6 +34,8 @@ const ContentContainer = styled.div`
     }
   }
   .suburbs {
+    margin: 0 auto;
+    margin-bottom: 60px;
     h2 {
       &:last-of-type {
         margin-top: 50px;
