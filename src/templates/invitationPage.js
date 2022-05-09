@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
@@ -13,7 +14,7 @@ const PageContainer = styled.div`
   text-align: center;
   padding-top: 30px;
   h1 {
-    font-size: 2.5em;
+    font-size: 48px;
   }
 `;
 
@@ -22,9 +23,19 @@ const ContentContainer = styled.div`
   .body {
     width: 85%;
     margin: 2.5rem auto;
+    margin-bottom: 60px;
     p {
       margin: 1.25rem 0;
     }
+  }
+  .rsvpButton {
+    background-color: var(--weddingGreen);
+    color: var(--offWhite);
+    border: none;
+    padding: 15px 30px;
+    align-self: center;
+    font-size: 16px;
+    text-decoration: none;
   }
 `;
 
@@ -44,6 +55,7 @@ const MembersDiv = styled.div`
 
 const KiwiKanga = styled.div`
   margin: 2.5rem 0;
+  margin-top: 60px;
 `;
 //#endregion
 
@@ -81,7 +93,9 @@ const InvitationPage = ({ pageContext }) => {
               We ask that you please RSVP with any dietry requirements by ___.
             </p>
           </div>
-          {/* RSVP button */}
+          <Link to="/rsvp" className="rsvpButton">
+            RSVP
+          </Link>
         </ContentContainer>
         <KiwiKanga>
           <KiwiKangaroo />
