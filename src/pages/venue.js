@@ -19,6 +19,7 @@ const PageContainer = styled.div`
 const ContentContainer = styled.div`
   width: 90%;
   margin-top: 30px;
+  max-width: 680px;
   .heading,
   .venueDiv {
     width: 85%;
@@ -53,17 +54,23 @@ const ContentContainer = styled.div`
       background-size: cover;
       background-position: center;
       width: 100%;
-      height: 100px;
+      max-width: 610px;
       height: 200px;
       margin: 30px 0;
+      @media (min-width: 768px) {
+        height: 250px;
+      }
     }
   }
   .map {
     margin-top: 30px;
     margin-bottom: 30px;
     .iFrame {
-      width: 290px;
-      height: 250px;
+      width: 100%;
+      height: 200px;
+      @media (min-width: 768px) {
+        height: 250px;
+      }
     }
   }
 `;

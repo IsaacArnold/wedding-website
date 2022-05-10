@@ -19,6 +19,7 @@ const PageContainer = styled.div`
 const ContentContainer = styled.div`
   width: 90%;
   margin-top: 30px;
+  max-width: 680px;
   .heading,
   .body {
     width: 85%;
@@ -45,6 +46,10 @@ const FormDiv = styled.div`
   text-align: left;
   width: 90%;
   padding-left: 10px;
+  max-width: 310px;
+  @media (min-width: 768px) {
+    margin-left: 5.9rem;
+  }
   .form-section {
     margin-bottom: 30px;
   }

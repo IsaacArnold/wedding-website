@@ -18,6 +18,7 @@ const PageContainer = styled.div`
 const ContentContainer = styled.div`
   width: 90%;
   margin-top: 30px;
+  max-width: 680px;
   h1 {
     font-size: 48px;
   }
@@ -36,6 +37,10 @@ const ContentContainer = styled.div`
   .suburbs {
     margin: 0 auto;
     margin-bottom: 60px;
+    p {
+      width: 80%;
+      margin: 20px auto;
+    }
     h2 {
       &:last-of-type {
         margin-top: 50px;
@@ -63,6 +68,9 @@ const ContentContainer = styled.div`
     .iFrame {
       width: 290px;
       height: 250px;
+      @media (min-width: 768px) {
+        width: 100%;
+      }
     }
   }
 `;

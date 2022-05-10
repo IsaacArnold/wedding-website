@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Layout from "../components/Layout";
-// import wgc from "../images/wgc.jpeg";
+
 import olivia from "../images/wedding-party/olivia.jpg";
 import hannah from "../images/wedding-party/hannah-v2.jpg";
 import sophie from "../images/wedding-party/sophie.jpg";
@@ -27,6 +27,7 @@ const PageContainer = styled.div`
 const ContentContainer = styled.div`
   width: 90%;
   margin-top: 30px;
+  max-width: 680px;
   h1 {
     font-size: 48px;
   }
@@ -37,7 +38,12 @@ const ContentContainer = styled.div`
   }
 `;
 
-const WeddingPartyGrid = styled.div``;
+const WeddingPartyGrid = styled.div`
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+`;
 
 const Person = styled.div`
   display: flex;
@@ -47,9 +53,14 @@ const Person = styled.div`
   text-align: center;
   width: 80%;
   margin: 40px auto;
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.35fr 1fr;
+    width: 90%;
+  }
+  @media (min-width: 1024px) {
+    width: 80%;
+    justify-content: flex-start;
   }
   .img {
     background-size: cover;
@@ -86,6 +97,13 @@ const Person = styled.div`
     }
   }
   .person-content {
+    @media (min-width: 768px) and (max-width: 1023px) {
+      display: flex;
+      text-align: left;
+      .person-title {
+        width: 230px;
+      }
+    }
     .name {
       font-size: 20px;
       font-weight: 600;
@@ -100,6 +118,9 @@ const Person = styled.div`
       font-size: 16px;
       width: 90%;
       margin: 20px auto;
+      @media (min-width: 768px) and (max-width: 1023px) {
+        width: 100%;
+      }
     }
   }
 `;
@@ -127,8 +148,10 @@ const WeddingParty = () => {
             <Person>
               <div className="img justin"></div>
               <div className="person-content">
-                <p className="name">Justin</p>
-                <p className="sub-name">Best man</p>
+                <div className="person-title">
+                  <p className="name">Justin</p>
+                  <p className="sub-name">Best man</p>
+                </div>
                 <p className="details">
                   Isaac’s Iona school friend. Genuine bloke who currently lives
                   in Rockhampton...don't hold it against him. Loves a good
@@ -140,8 +163,10 @@ const WeddingParty = () => {
             <Person>
               <div className="img rachel"></div>
               <div className="person-content">
-                <p className="name">Rachel</p>
-                <p className="sub-name">Sister of the Bride</p>
+                <div className="person-title">
+                  <p className="name">Rachel</p>
+                  <p className="sub-name">Sister of the Bride</p>
+                </div>
                 <p className="details">
                   Loves a good chat. All-round good human. Lives on the Gold
                   Coast and is working on her GC tan.
@@ -152,8 +177,10 @@ const WeddingParty = () => {
             <Person>
               <div className="img jordan"></div>
               <div className="person-content">
-                <p className="name">Jordan</p>
-                <p className="sub-name">The funny one</p>
+                <div className="person-title">
+                  <p className="name">Jordan</p>
+                  <p className="sub-name">The funny one</p>
+                </div>
                 <p className="details">
                   Isaac’s Iona school friend. Loves a laugh and a bit of
                   backyard cricket. Can fit a whole slice of cake in his mouth.
@@ -164,8 +191,10 @@ const WeddingParty = () => {
             <Person>
               <div className="img sophie"></div>
               <div className="person-content">
-                <p className="name">Sophie</p>
-                <p className="sub-name">Bestie of the Bride</p>
+                <div className="person-title">
+                  <p className="name">Sophie</p>
+                  <p className="sub-name">Bestie of the Bride</p>
+                </div>
                 <p className="details">
                   Ness’ friend from school. Visiting from NZ but should move to
                   Brisbane ASAP. Most likely to crack out some killer dance
@@ -177,8 +206,10 @@ const WeddingParty = () => {
             <Person>
               <div className="img wheeler"></div>
               <div className="person-content">
-                <p className="name">Matt</p>
-                <p className="sub-name">The onto it one</p>
+                <div className="person-title">
+                  <p className="name">Matt</p>
+                  <p className="sub-name">The onto it one</p>
+                </div>
                 <p className="details">
                   Isaac’s Iona school friend. Always open for a chat and a beer.
                   Don't get him started on cricket and indie music.
@@ -189,8 +220,10 @@ const WeddingParty = () => {
             <Person>
               <div className="img hannah"></div>
               <div className="person-content">
-                <p className="name">Hannah</p>
-                <p className="sub-name">Future sister-in-law</p>
+                <div className="person-title">
+                  <p className="name">Hannah</p>
+                  <p className="sub-name">Future sister-in-law</p>
+                </div>
                 <p className="details">
                   The shorter (but older) of the two red-heads. Will make anyone
                   feel welcome. Can't say no to an episode of Grey's Anatomy.
@@ -201,8 +234,10 @@ const WeddingParty = () => {
             <Person>
               <div className="img nathan"></div>
               <div className="person-content">
-                <p className="name">Nathan</p>
-                <p className="sub-name">The loud one</p>
+                <div className="person-title">
+                  <p className="name">Nathan</p>
+                  <p className="sub-name">The loud one</p>
+                </div>
                 <p className="details">
                   Isaac's Iona school friend. Always ready to lend an ear or
                   share a laugh. Just ask him about his camping setup.
@@ -213,8 +248,10 @@ const WeddingParty = () => {
             <Person>
               <div className="img olivia"></div>
               <div className="person-content">
-                <p className="name">Olivia</p>
-                <p className="sub-name">Future sister-in-law</p>
+                <div className="person-title">
+                  <p className="name">Olivia</p>
+                  <p className="sub-name">Future sister-in-law</p>
+                </div>
                 <p className="details">
                   The taller (but younger) of the two red-heads. Three words to
                   describe Liv; sporty, hungry and fun. Not to be underestimated
