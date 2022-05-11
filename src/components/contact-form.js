@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -16,6 +16,11 @@ const FormDiv = styled.div`
   }
   .form-section {
     margin-bottom: 30px;
+    @media (min-width: 1024px) {
+      &.messageNotAttending {
+        width: 350px;
+      }
+    }
   }
   .radioDiv {
     display: flex;
@@ -84,6 +89,7 @@ const FormDiv = styled.div`
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xzbokydk");
+  const [attending, setAttending] = useState(true);
 
   if (state.succeeded) {
     return <p>Thanks for your submission!</p>;
@@ -101,6 +107,7 @@ export default function ContactForm() {
               id="attendanceYes"
               value="yes"
               required={true}
+              onClick={() => setAttending(true)}
             />
             <label htmlFor="attendanceYes">Yes</label>
           </div>
@@ -111,6 +118,7 @@ export default function ContactForm() {
               id="attendanceNo"
               value="No"
               required={true}
+              onClick={() => setAttending(false)}
             />
             <label htmlFor="attendanceNo">No</label>
           </div>
@@ -125,72 +133,96 @@ export default function ContactForm() {
             errors={state.errors}
           />
         </div>
+        {/* If no, then disable or hide these fields */}
+        {attending && (
+          <>
+            <div className="form-section">
+              <label htmlFor="fullName">First Name (first in party)</label>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                placeholder="Isaac"
+                required={true}
+              />
+              <ValidationError
+                prefix="FirstName"
+                field="fullName"
+                errors={state.errors}
+              />
+            </div>
 
-        <div className="form-section">
-          <label htmlFor="fullName">First Name (first in party)</label>
-          <input
-            type="text"
-            name="fullName"
-            id="fullName"
-            placeholder="Isaac"
-            required={true}
-          />
-          <ValidationError
-            prefix="FirstName"
-            field="fullName"
-            errors={state.errors}
-          />
-        </div>
+            <div className="form-section">
+              <label htmlFor="lastName">Last Name (first in party)</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Arnold"
+                required={true}
+              />
+              <ValidationError
+                prefix="LastName"
+                field="lastName"
+                errors={state.errors}
+              />
+            </div>
 
-        <div className="form-section">
-          <label htmlFor="lastName">Last Name (first in party)</label>
-          <input
-            type="text"
-            name="lastName"
-            id="lastName"
-            placeholder="Arnold"
-            required={true}
-          />
-          <ValidationError
-            prefix="LastName"
-            field="lastName"
-            errors={state.errors}
-          />
-        </div>
+            <div className="form-section">
+              <label htmlFor="partyMembers">
+                Please list other party members
+              </label>
+              <textarea
+                name="partyMembers"
+                id="partyMembers"
+                placeholder="Kit, Sunny"
+                required={true}
+              />
+            </div>
 
-        <div className="form-section">
-          <label htmlFor="partyMembers">Please list other party members</label>
-          <textarea
-            name="partyMembers"
-            id="partyMembers"
-            placeholder="Kit, Sunny"
-            required={true}
-          />
-        </div>
+            <div className="form-section">
+              <label htmlFor="dietary">
+                If anyone in your party has any dietary requirements, please
+                list them below. Please include the name of the guest and then
+                their request.
+              </label>
+              <textarea
+                name="dietary"
+                id="dietary"
+                placeholder="Isaac - vegetarian and garlic allergy"
+                required={true}
+              />
+            </div>
 
-        <div className="form-section">
-          <label htmlFor="dietary">
-            If anyone in your party has any dietary requirements, please list
-            them below. Please include the name of the guest and then their
-            request.
-          </label>
-          <textarea
-            name="dietary"
-            id="dietary"
-            placeholder="Isaac - vegetarian and garlic allergy"
-            required={true}
-          />
-        </div>
+            <div className="form-section">
+              <label htmlFor="songRequest">
+                Request a song - one per guest
+              </label>
+              <textarea
+                name="songRequest"
+                id="songRequest"
+                placeholder="Eagle Rock - Daddy Cool, Poi E - Patea Maori Club"
+                required={true}
+              />
+            </div>
+          </>
+        )}
 
-        <div className="form-section">
-          <label htmlFor="songRequest">Request a song - one per guest</label>
-          <textarea
-            name="songRequest"
-            id="songRequest"
-            placeholder="Eagle Rock - Daddy Cool, Poi E - Patea Maori Club"
-            required={true}
-          />
-        </div>
+        {!attending && (
+          <>
+            <div className="form-section messageNotAttending">
+              <label htmlFor="messageNotAttending">
+                Sorry that you aren't able to make it - we will miss you! If
+                you'd like, leave us a message for us to read on our big day.
+              </label>
+              <textarea
+                name="messageNotAttending"
+                id="messageNotAttending"
+                placeholder="Type your message here..."
+              />
+            </div>
+          </>
+        )}
 
         <button type="submit" disabled={state.submitting} className="submitBtn">
           Submit RSVP

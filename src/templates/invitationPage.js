@@ -56,7 +56,7 @@ const Header = styled.div`
 `;
 
 const MembersDiv = styled.div`
-  font-size: 20px;
+  font-size: 28px;
 `;
 
 const KiwiKanga = styled.div`
