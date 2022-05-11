@@ -4,6 +4,8 @@ import styled from "styled-components";
 import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Layout from "../components/Layout";
+import { FaGlassCheers } from "react-icons/fa";
+import { GiGlassCelebration } from "react-icons/gi";
 
 //#region Page styles
 const PageContainer = styled.div`
@@ -24,7 +26,7 @@ const ContentContainer = styled.div`
   .body {
     width: 85%;
     margin: 2.5rem auto;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     p {
       margin: 1.25rem 0;
     }
@@ -52,6 +54,14 @@ const Header = styled.div`
     font-weight: 400;
     font-size: 30px;
     margin-bottom: 15px;
+  }
+  .icons {
+    margin-top: 30px;
+    svg {
+      width: 50px;
+      height: 50px;
+      margin-left: 5px;
+    }
   }
 `;
 
@@ -81,6 +91,9 @@ const InvitationPage = ({ pageContext }) => {
         <Header>
           <h2>Dear,</h2>
           <MembersDiv>{displayName}</MembersDiv>
+          <div className="icons">
+            <GiGlassCelebration />
+          </div>
         </Header>
         <Divider width="80px" />
         <ContentContainer>
