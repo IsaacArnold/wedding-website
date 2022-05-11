@@ -98,22 +98,23 @@ const InvitationPage = ({ pageContext }) => {
         <Divider width="80px" />
         <ContentContainer>
           <div className="body">
+            <p>We would love for you to join us in celebrating our wedding!</p>
             <p>
-              We would love for you to join us in celebrating our wedding, with
-              an evening of good food, good drink and good (debatable) dance
-              moves.
+              It will be an evening of good food, good drink and good
+              (debatable) dance moves.
             </p>
             <p>
               We will exchange vows in an outdoor ceremony beginning at 4:00pm
               at the Wynnum Golf Club on Saturday 22nd October 2022. Our
-              ceremony will be followed by canapes and a sit-down meal.
+              ceremony will be followed by canap&eacute;s and a sit-down meal.
             </p>
             <p>
-              We ask that you please RSVP with any dietry requirements by ___.
+              We ask that you please RSVP with any dietry requirements by 1st
+              September 2022.
             </p>
             <p className="sub-text">
               Click on the RSVP button below or click 'Isaac & Vanessa' at the
-              top of this page to return to the home screen.
+              top of this page to view the home screen.
             </p>
           </div>
           <Link to="/rsvp" className="rsvpButton">

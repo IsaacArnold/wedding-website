@@ -110,7 +110,7 @@ const Venue = () => {
             <ul>
               <li>On-site free parking</li>
               <li>Lift access</li>
-              <li>Wynnum Central Train Station, within walking distance</li>
+              <li>Wynnum Central Train Station within walking distance</li>
             </ul>
           </div>
         </ContentContainer>

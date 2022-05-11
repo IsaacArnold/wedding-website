@@ -125,7 +125,7 @@ const IndexPage = () => (
             can find out more about our venue, accommodation options (if you’re
             from out of town) and get to know our amazing bridal party.
           </p>
-          <p>Don’t forget to RSVP before ___ </p>
+          <p>Don’t forget to RSVP before 1st September 2022.</p>
           <p>Have fun, take a look around!</p>
         </div>
       </ContentContainer>

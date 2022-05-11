@@ -165,7 +165,7 @@ const Accommodation = () => {
             </div>
           </div>
           <div className="suburbs">
-            <h2>Suburbs close by, if you're looking for an AirBnb:</h2>
+            <h2>Suburbs close by if you're looking for an AirBnb:</h2>
             <p>
               Feel free to get in touch if you want to check with us before
               booking.

@@ -69,7 +69,9 @@ const RSVP = () => (
           <h1>RSVP</h1>
         </div>
         <div className="body">
-          <p>Please RSVP by completing the below forms before ___.</p>
+          <p>
+            Please RSVP by completing the below forms before 1st September 2022.
+          </p>
           <p>We can't wait to see you!</p>
         </div>
         <FormDiv>
