@@ -123,7 +123,7 @@ const IndexPage = () => (
             We've created this website as a convenient and interactive way to
             share all the important details in the lead up to our big day. You
             can find out more about our venue, accommodation options (if you’re
-            from out of town) and get to know our amazing bridal party.
+            from out of town) and get to know our amazing wedding party.
           </p>
           <p>Don’t forget to RSVP before 1st September 2022.</p>
           <p>Have fun, take a look around!</p>

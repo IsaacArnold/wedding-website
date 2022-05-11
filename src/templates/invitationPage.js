@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Layout from "../components/Layout";
-import { FaGlassCheers } from "react-icons/fa";
 import { GiGlassCelebration } from "react-icons/gi";
 
 //#region Page styles

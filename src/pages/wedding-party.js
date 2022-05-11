@@ -154,7 +154,7 @@ const WeddingParty = () => {
                 </div>
                 <p className="details">
                   Isaac’s Iona school friend. Genuine bloke who currently lives
-                  in Rockhampton...don't hold it against him. Loves a good
+                  in Rockhampton...don't hold it against him. Appreciates a good
                   man-bun.
                 </p>
               </div>
@@ -182,7 +182,7 @@ const WeddingParty = () => {
                   <p className="sub-name">The funny one</p>
                 </div>
                 <p className="details">
-                  Isaac’s Iona school friend. Loves a laugh and a bit of
+                  Isaac’s Iona school friend. Always up for a laugh and a bit of
                   backyard cricket. Can fit a whole slice of cake in his mouth.
                 </p>
               </div>
@@ -240,7 +240,7 @@ const WeddingParty = () => {
                 </div>
                 <p className="details">
                   Isaac's Iona school friend. Always ready to lend an ear or
-                  share a laugh. Just ask him about his camping setup.
+                  share a laugh. Go on, ask him about his camping setup.
                 </p>
               </div>
             </Person>
