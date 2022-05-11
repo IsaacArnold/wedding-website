@@ -55,6 +55,9 @@ const FormDiv = styled.div`
     padding: 15px 30px;
     align-self: center;
     font-size: 16px;
+    @media (min-width: 768px) {
+      align-self: flex-start;
+    }
   }
   input,
   textarea {

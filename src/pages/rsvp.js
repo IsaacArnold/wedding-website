@@ -47,75 +47,13 @@ const FormDiv = styled.div`
   width: 90%;
   padding-left: 10px;
   max-width: 310px;
-  @media (min-width: 768px) {
-    margin-left: 5.9rem;
-  }
-  .form-section {
-    margin-bottom: 30px;
-  }
-  .radioDiv {
-    display: flex;
-    margin-bottom: 15px;
-    margin-left: 5px;
-    input[type="radio"] {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      -webkit-appearance: none;
-      appearance: none;
-      background-color: rgba(46, 71, 53, 20%);
-      margin: 0;
-      margin-right: 15px;
-      display: grid;
-      place-content: center;
-      margin-top: 2px;
-      &::before {
-        content: "";
-        width: 18px;
-        height: 18px;
-        margin-right: 10px;
-        border-radius: 50%;
-        transform: scale(0);
-        transition: 120ms transform ease-in-out;
-        box-shadow: inset 1.2em 1.2em var(--weddingGreen);
-      }
-      &:checked::before {
-        transform: scale(1);
-      }
-    }
-  }
-  .submitBtn {
-    background-color: var(--weddingGreen);
-    color: var(--offWhite);
-    border: none;
-    padding: 15px 30px;
-    align-self: center;
-    font-size: 16px;
-  }
-  input,
-  textarea {
-    background-color: rgba(46, 71, 53, 20%);
-    border: none;
-    border-radius: 0px;
-    width: 100%;
-    height: 50px;
-    margin-top: 10px;
-    padding-left: 10px;
-    &::placeholder {
-      color: var(--offWhite);
-      font-size: 14px;
-    }
-  }
-  textarea {
-    height: 70px;
-    &::placeholder {
-      padding-top: 5px;
-    }
-  }
 `;
 
 const KiwiKanga = styled.div`
   margin: 2.5rem 0;
+  @media (min-width: 768px) {
+    margin-top: 3.5rem;
+  }
 `;
 //#endregion
 

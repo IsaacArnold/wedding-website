@@ -99,8 +99,8 @@ const InvitationPage = ({ pageContext }) => {
               We ask that you please RSVP with any dietry requirements by ___.
             </p>
             <p className="sub-text">
-              Click on the RSVP button below or click our names at the top of
-              this page to return to the home screen.
+              Click on the RSVP button below or click 'Isaac & Vanessa' at the
+              top of this page to return to the home screen.
             </p>
           </div>
           <Link to="/rsvp" className="rsvpButton">
