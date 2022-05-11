@@ -28,6 +28,11 @@ const ContentContainer = styled.div`
     p {
       margin: 1.25rem 0;
     }
+    .sub-text {
+      font-size: 14px;
+      width: 85%;
+      margin: auto;
+    }
   }
   .rsvpButton {
     background-color: var(--weddingGreen);
@@ -92,6 +97,10 @@ const InvitationPage = ({ pageContext }) => {
             </p>
             <p>
               We ask that you please RSVP with any dietry requirements by ___.
+            </p>
+            <p className="sub-text">
+              Click on the RSVP button below or click our names at the top of
+              this page to return to the home screen.
             </p>
           </div>
           <Link to="/rsvp" className="rsvpButton">

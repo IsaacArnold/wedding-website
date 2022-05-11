@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import { FiMenu } from "react-icons/fi";
+import { CgClose } from "react-icons/cg";
 import Divider from "./Divider";
 
 //#region Page styles
@@ -44,6 +45,13 @@ const HamburgerContainer = styled.div`
     width: 25px;
     height: 40px;
     color: var(--weddingGreen);
+    margin-top: 5px;
+  }
+  .hamburger,
+  .close {
+    &.hidden {
+      display: none;
+    }
   }
 `;
 
@@ -121,6 +129,8 @@ const Navigation = () => {
   const handleClick = () => {
     // Toggle the hidden class
     document.getElementById("dropdown").classList.toggle("hidden");
+    document.querySelector(".hamburger").classList.toggle("hidden");
+    document.querySelector(".close").classList.toggle("hidden");
   };
   return (
     <NavStyles>
@@ -130,7 +140,8 @@ const Navigation = () => {
         </MainLink>
       </div>
       <HamburgerContainer onClick={handleClick}>
-        <FiMenu />
+        <FiMenu className="hamburger" />
+        <CgClose className="close hidden" />
       </HamburgerContainer>
       <MobileNavContainer id="dropdown" className="hidden">
         <div className="inner-mobile-nav">
