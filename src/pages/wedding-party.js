@@ -182,8 +182,9 @@ const WeddingParty = () => {
                   <p className="sub-name">The funny one</p>
                 </div>
                 <p className="details">
-                  Isaac’s Iona school friend. Always up for a laugh and a bit of
-                  backyard cricket. Can fit a whole slice of cake in his mouth.
+                  Isaac’s Iona school friend. Won't shy away from a good laugh
+                  and a bit of backyard cricket. Can fit a whole slice of cake
+                  in his mouth.
                 </p>
               </div>
             </Person>
@@ -239,8 +240,8 @@ const WeddingParty = () => {
                   <p className="sub-name">The loud one</p>
                 </div>
                 <p className="details">
-                  Isaac's Iona school friend. Always ready to lend an ear or
-                  share a laugh. Go on, ask him about his camping setup.
+                  Isaac's Iona school friend. Will happily lend an ear or share
+                  a laugh. Go on, ask him about his camping setup.
                 </p>
               </div>
             </Person>

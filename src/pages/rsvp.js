@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Layout from "../components/Layout";
@@ -44,9 +44,13 @@ const FormDiv = styled.div`
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  width: 90%;
+  /* width: 90%; */
   padding-left: 10px;
   max-width: 310px;
+  .confirm {
+    text-align: center;
+    margin: auto;
+  }
 `;
 
 const KiwiKanga = styled.div`
@@ -57,7 +61,7 @@ const KiwiKanga = styled.div`
 `;
 //#endregion
 
-const RSVP = () => (
+const RSVP = () => {
   <Layout>
     <Helmet>
       <title>RSVP | Isaac & Ness' Wedding Website</title>
@@ -82,7 +86,7 @@ const RSVP = () => (
         <KiwiKangaroo />
       </KiwiKanga>
     </PageContainer>
-  </Layout>
-);
+  </Layout>;
+};
 
 export default RSVP;

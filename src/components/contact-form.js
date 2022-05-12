@@ -10,6 +10,10 @@ const FormDiv = styled.div`
   text-align: left;
   /* width: 90%; */
   padding-left: 10px;
+  .confirm {
+    text-align: center;
+    margin: auto;
+  }
   form {
     display: flex;
     flex-direction: column;
@@ -92,7 +96,11 @@ export default function ContactForm() {
   const [attending, setAttending] = useState(true);
 
   if (state.succeeded) {
-    return <p>Thanks for your submission!</p>;
+    return attending ? (
+      <p className="confirm">Woohoo - we can't wait to celebrate with you!</p>
+    ) : (
+      <p className="confirm">You will be missed!</p>
+    );
   }
 
   return (
@@ -133,7 +141,6 @@ export default function ContactForm() {
             errors={state.errors}
           />
         </div>
-        {/* If no, then disable or hide these fields */}
         {attending && (
           <>
             <div className="form-section">
