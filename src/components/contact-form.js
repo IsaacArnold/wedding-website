@@ -91,7 +91,7 @@ const FormDiv = styled.div`
 `;
 //#endregion
 
-export default function ContactForm() {
+export default function ContactForm(props) {
   const [state, handleSubmit] = useForm("xzbokydk");
   const [attending, setAttending] = useState(true);
 
@@ -99,9 +99,17 @@ export default function ContactForm() {
     return attending ? (
       <p className="confirm">Woohoo - we can't wait to celebrate with you!</p>
     ) : (
-      <p className="confirm">You will be missed!</p>
+      <>
+        <p className="confirm">Thank you for letting us know.</p>
+        <p className="confirm">You will be missed!</p>
+      </>
     );
   }
+
+  const onTrigger = () => {
+    const { callback } = props;
+    callback(false);
+  };
 
   return (
     <FormDiv>
@@ -231,7 +239,12 @@ export default function ContactForm() {
           </>
         )}
 
-        <button type="submit" disabled={state.submitting} className="submitBtn">
+        <button
+          type="submit"
+          disabled={state.submitting}
+          className="submitBtn"
+          onClick={() => onTrigger()}
+        >
           Submit RSVP
         </button>
       </form>

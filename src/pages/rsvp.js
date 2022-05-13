@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Layout from "../components/Layout";
@@ -37,6 +37,9 @@ const ContentContainer = styled.div`
       margin: 1.25rem 0;
     }
   }
+  .hidden {
+    display: none;
+  }
 `;
 
 const FormDiv = styled.div`
@@ -62,31 +65,38 @@ const KiwiKanga = styled.div`
 //#endregion
 
 const RSVP = () => {
-  <Layout>
-    <Helmet>
-      <title>RSVP | Isaac & Ness' Wedding Website</title>
-    </Helmet>
-    <PageContainer>
-      <Divider width="80px" />
-      <ContentContainer>
-        <div className="heading">
-          <h1>RSVP</h1>
-        </div>
-        <div className="body">
-          <p>
-            Please RSVP by completing the below forms before 1st September 2022.
-          </p>
-          <p>We can't wait to see you!</p>
-        </div>
-        <FormDiv>
-          <ContactForm />
-        </FormDiv>
-      </ContentContainer>
-      <KiwiKanga>
-        <KiwiKangaroo />
-      </KiwiKanga>
-    </PageContainer>
-  </Layout>;
+  const handleButtonClick = () => {
+    document.querySelector(".body").classList.toggle("hidden");
+  };
+
+  return (
+    <Layout>
+      <Helmet>
+        <title>RSVP | Isaac & Ness' Wedding Website</title>
+      </Helmet>
+      <PageContainer>
+        <Divider width="80px" />
+        <ContentContainer>
+          <div className="heading">
+            <h1>RSVP</h1>
+          </div>
+          <div className="body">
+            <p>
+              Please RSVP by completing the below forms before 1st September
+              2022.
+            </p>
+            <p>We can't wait to see you!</p>
+          </div>
+          <FormDiv>
+            <ContactForm callback={handleButtonClick} />
+          </FormDiv>
+        </ContentContainer>
+        <KiwiKanga>
+          <KiwiKangaroo />
+        </KiwiKanga>
+      </PageContainer>
+    </Layout>
+  );
 };
 
 export default RSVP;
