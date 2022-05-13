@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import Divider from "../components/Divider";
@@ -84,6 +85,11 @@ const InvitationPage = ({ pageContext }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>
+          Your Invitation - {displayName} | Isaac & Ness' Wedding Website
+        </title>
+      </Helmet>
       <PageContainer>
         <Divider width="80px" />
         <h1>You're Invited!</h1>

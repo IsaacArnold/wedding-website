@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
@@ -49,6 +49,9 @@ const KiwiKanga = styled.div`
 const Gifting = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Gifting | Isaac & Ness' Wedding Website</title>
+      </Helmet>
       <PageContainer>
         <Divider width="80px" />
         <ContentContainer>
