@@ -54,6 +54,16 @@ const FormDiv = styled.div`
     text-align: center;
     margin: auto;
   }
+  .rsvpButton {
+    background-color: var(--weddingGreen);
+    color: var(--offWhite);
+    border: none;
+    padding: 15px 30px;
+    align-self: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 30px;
+  }
 `;
 
 const KiwiKanga = styled.div`

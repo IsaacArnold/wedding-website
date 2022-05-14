@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -84,9 +85,7 @@ const FormDiv = styled.div`
   }
   textarea {
     height: 70px;
-    &::placeholder {
-      padding-top: 5px;
-    }
+    padding-top: 10px;
   }
 `;
 //#endregion
@@ -97,11 +96,19 @@ export default function ContactForm(props) {
 
   if (state.succeeded) {
     return attending ? (
-      <p className="confirm">Woohoo - we can't wait to celebrate with you!</p>
+      <>
+        <p className="confirm">Woohoo - we can't wait to celebrate with you!</p>
+        <Link to="/" className="rsvpButton">
+          Return home
+        </Link>
+      </>
     ) : (
       <>
         <p className="confirm">Thank you for letting us know.</p>
         <p className="confirm">You will be missed!</p>
+        <Link to="/" className="rsvpButton">
+          Return home
+        </Link>
       </>
     );
   }
@@ -149,40 +156,39 @@ export default function ContactForm(props) {
             errors={state.errors}
           />
         </div>
+        <div className="form-section">
+          <label htmlFor="fullName">First Name (first in party)</label>
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            placeholder="Isaac"
+            required={true}
+          />
+          <ValidationError
+            prefix="FirstName"
+            field="fullName"
+            errors={state.errors}
+          />
+        </div>
+
+        <div className="form-section">
+          <label htmlFor="lastName">Last Name (first in party)</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Arnold"
+            required={true}
+          />
+          <ValidationError
+            prefix="LastName"
+            field="lastName"
+            errors={state.errors}
+          />
+        </div>
         {attending && (
           <>
-            <div className="form-section">
-              <label htmlFor="fullName">First Name (first in party)</label>
-              <input
-                type="text"
-                name="fullName"
-                id="fullName"
-                placeholder="Isaac"
-                required={true}
-              />
-              <ValidationError
-                prefix="FirstName"
-                field="fullName"
-                errors={state.errors}
-              />
-            </div>
-
-            <div className="form-section">
-              <label htmlFor="lastName">Last Name (first in party)</label>
-              <input
-                type="text"
-                name="lastName"
-                id="lastName"
-                placeholder="Arnold"
-                required={true}
-              />
-              <ValidationError
-                prefix="LastName"
-                field="lastName"
-                errors={state.errors}
-              />
-            </div>
-
             <div className="form-section">
               <label htmlFor="partyMembers">
                 Please list other party members
