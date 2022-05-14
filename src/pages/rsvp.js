@@ -19,7 +19,7 @@ const PageContainer = styled.div`
 const ContentContainer = styled.div`
   width: 90%;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   max-width: 680px;
   .heading,
   .body {

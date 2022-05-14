@@ -9,7 +9,6 @@ const FormDiv = styled.div`
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  /* width: 90%; */
   padding-left: 10px;
   max-width: 310px;
   .confirm {
