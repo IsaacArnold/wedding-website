@@ -19,6 +19,7 @@ const PageContainer = styled.div`
 const ContentContainer = styled.div`
   width: 90%;
   margin-top: 30px;
+  margin-bottom: 30px;
   max-width: 680px;
   .heading,
   .body {
@@ -39,30 +40,6 @@ const ContentContainer = styled.div`
   }
   .hidden {
     display: none;
-  }
-`;
-
-const FormDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  /* width: 90%; */
-  padding-left: 10px;
-  max-width: 310px;
-  .confirm {
-    text-align: center;
-    margin: auto;
-  }
-  .rsvpButton {
-    background-color: var(--weddingGreen);
-    color: var(--offWhite);
-    border: none;
-    padding: 15px 30px;
-    align-self: center;
-    font-size: 16px;
-    text-decoration: none;
-    margin-top: 30px;
   }
 `;
 
@@ -97,9 +74,7 @@ const RSVP = () => {
             </p>
             <p>We can't wait to see you!</p>
           </div>
-          <FormDiv>
-            <ContactForm callback={handleButtonClick} />
-          </FormDiv>
+          <ContactForm callback={handleButtonClick} />
         </ContentContainer>
         <KiwiKanga>
           <KiwiKangaroo />

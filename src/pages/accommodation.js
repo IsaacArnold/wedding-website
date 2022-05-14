@@ -93,7 +93,7 @@ const Accommodation = () => {
             <h1>Accommodation</h1>
             <p>
               If you are joining us from out of town and looking for
-              accommodation, you could stay at a local motel, book an AirBnb or
+              accommodation; you could stay at a local motel, book an AirBnb or
               stay in Brisbane CBD.
             </p>
             <p>Here are a few of our recommendations.</p>

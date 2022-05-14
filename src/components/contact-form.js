@@ -11,6 +11,7 @@ const FormDiv = styled.div`
   text-align: left;
   /* width: 90%; */
   padding-left: 10px;
+  max-width: 310px;
   .confirm {
     text-align: center;
     margin: auto;
@@ -88,6 +89,24 @@ const FormDiv = styled.div`
     padding-top: 10px;
   }
 `;
+
+const SuccessDiv = styled.div`
+  p {
+    &.margin {
+      margin-bottom: 60px;
+    }
+  }
+  .rsvpButton {
+    background-color: var(--weddingGreen);
+    color: var(--offWhite);
+    border: none;
+    padding: 15px 30px;
+    align-self: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 30px;
+  }
+`;
 //#endregion
 
 export default function ContactForm(props) {
@@ -96,20 +115,22 @@ export default function ContactForm(props) {
 
   if (state.succeeded) {
     return attending ? (
-      <>
-        <p className="confirm">Woohoo - we can't wait to celebrate with you!</p>
+      <SuccessDiv>
+        <p className="confirm margin">
+          Woohoo - we can't wait to celebrate with you!
+        </p>
         <Link to="/" className="rsvpButton">
           Return home
         </Link>
-      </>
+      </SuccessDiv>
     ) : (
-      <>
+      <SuccessDiv>
         <p className="confirm">Thank you for letting us know.</p>
-        <p className="confirm">You will be missed!</p>
+        <p className="confirm margin">You will be missed!</p>
         <Link to="/" className="rsvpButton">
           Return home
         </Link>
-      </>
+      </SuccessDiv>
     );
   }
 
