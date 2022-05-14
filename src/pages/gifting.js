@@ -63,8 +63,8 @@ const Gifting = () => {
           </div>
           <div className="body">
             <p>
-              The time and effort that you put in to being with us on our
-              wedding day is a gift in itself.
+              The time and effort that you put into being with us on our wedding
+              day is a gift in itself.
             </p>
             <p>
               If you would like to give us a gift that will remind us of our
