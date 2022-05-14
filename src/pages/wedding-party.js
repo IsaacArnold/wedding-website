@@ -150,7 +150,7 @@ const WeddingParty = () => {
               <div className="person-content">
                 <div className="person-title">
                   <p className="name">Justin</p>
-                  <p className="sub-name">Best man</p>
+                  <p className="sub-name">Best Man</p>
                 </div>
                 <p className="details">
                   Isaac’s Iona school friend. Genuine bloke who currently lives
@@ -179,7 +179,7 @@ const WeddingParty = () => {
               <div className="person-content">
                 <div className="person-title">
                   <p className="name">Jordan</p>
-                  <p className="sub-name">The funny one</p>
+                  <p className="sub-name">The Funny One</p>
                 </div>
                 <p className="details">
                   Isaac’s Iona school friend. Won't shy away from a good laugh
@@ -209,7 +209,7 @@ const WeddingParty = () => {
               <div className="person-content">
                 <div className="person-title">
                   <p className="name">Matt</p>
-                  <p className="sub-name">The onto it one</p>
+                  <p className="sub-name">The Onto-it One</p>
                 </div>
                 <p className="details">
                   Isaac’s Iona school friend. Always open for a chat and a beer.
@@ -223,7 +223,7 @@ const WeddingParty = () => {
               <div className="person-content">
                 <div className="person-title">
                   <p className="name">Hannah</p>
-                  <p className="sub-name">Future sister-in-law</p>
+                  <p className="sub-name">Future Sister-in-Law</p>
                 </div>
                 <p className="details">
                   The shorter (but older) of the two red-heads. Will make anyone
@@ -237,7 +237,7 @@ const WeddingParty = () => {
               <div className="person-content">
                 <div className="person-title">
                   <p className="name">Nathan</p>
-                  <p className="sub-name">The loud one</p>
+                  <p className="sub-name">The Loud One</p>
                 </div>
                 <p className="details">
                   Isaac's Iona school friend. Will happily lend an ear or share
@@ -251,7 +251,7 @@ const WeddingParty = () => {
               <div className="person-content">
                 <div className="person-title">
                   <p className="name">Olivia</p>
-                  <p className="sub-name">Future sister-in-law</p>
+                  <p className="sub-name">Future Sister-in-Law</p>
                 </div>
                 <p className="details">
                   The taller (but younger) of the two red-heads. Three words to
