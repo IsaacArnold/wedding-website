@@ -278,5 +278,25 @@
         "partyName": "Nathan&Madi",
         "partyMembers": ["Nathan", "Madi"],
         "displayName": "Nathan & Madi"
+    },
+    {
+        "partyName": "Rachel&Kurt",
+        "partyMembers": ["Rachel", "Kurt"],
+        "displayName": "Rachel & Kurt"
+    },
+    {
+        "partyName": "Hannah&Aidan",
+        "partyMembers": ["Hannah", "Aidan"],
+        "displayName": "Hannah & Aidan"
+    },
+    {
+        "partyName": "Olivia&Jeremy",
+        "partyMembers": ["Olivia", "Jeremy"],
+        "displayName": "Olivia & Jeremy"
+    },
+    {
+        "partyName": "SophieC",
+        "partyMembers": ["Sophie"],
+        "displayName": "Sophie"
     }
 ]
