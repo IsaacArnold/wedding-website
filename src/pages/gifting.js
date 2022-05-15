@@ -5,6 +5,7 @@ import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Layout from "../components/Layout";
 import { ImGift } from "react-icons/im";
+import socialImage from "../images/SEO-image.png";
 
 //#region Page styles
 const PageContainer = styled.div`
