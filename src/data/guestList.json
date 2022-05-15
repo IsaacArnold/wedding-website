@@ -5,9 +5,9 @@
         "displayName": "Iain & Kathy"
     },
     {
-        "partyName": "Norm",
+        "partyName": "GrandadNorm",
         "partyMembers": ["Norm"],
-        "displayName": "Norm"
+        "displayName": "Grandad Norm"
     },
     {
         "partyName": "Sandy",
@@ -22,7 +22,7 @@
     {
         "partyName": "D&J",
         "partyMembers": ["Dickie", "Jane"],
-        "displayName": "Dickie & Jane"
+        "displayName": "Grandad Dickie & Jane"
     },
     {
         "partyName": "WatsonF",
@@ -37,7 +37,7 @@
     {
         "partyName": "Watson-Eykel",
         "partyMembers": ["James", "Emma"],
-        "displayName": "James & Emma"
+        "displayName": "James, Emma & Duncan"
     },
     {
         "partyName": "Sue",
@@ -140,9 +140,9 @@
         "displayName": "Lyn & Bret"
     },
     {
-        "partyName": "Val",
+        "partyName": "GrandmaVal",
         "partyMembers": ["Val"],
-        "displayName": "Val"
+        "displayName": "Grandma Val"
     },
     {
         "partyName": "Helen&Errol",
@@ -250,7 +250,7 @@
         "displayName": "Matt"
     },
     {
-        "partyName": "Michaleks",
+        "partyName": "Michaliks",
         "partyMembers": ["Angela", "Rob", "Hank", "Jack", "Luke", "Matt"],
         "displayName": "Angela, Rob, Hank, Jack, Luke & Matt"
     },
