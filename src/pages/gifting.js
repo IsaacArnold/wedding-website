@@ -75,8 +75,8 @@ const Gifting = () => {
             <p>A Wishing Well will be set up at the reception. </p>
             <p>
               If giving a physical gift is more your style we will be setting up
-              a small gift registary with Myer. A link for this will be
-              available on this page in August.
+              a small gift registry with Myer. A link for this will be available
+              on this page in August.
             </p>
           </div>
         </ContentContainer>
