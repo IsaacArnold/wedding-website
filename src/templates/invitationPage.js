@@ -6,6 +6,7 @@ import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Layout from "../components/Layout";
 import { GiGlassCelebration } from "react-icons/gi";
+import socialImage from "../images/SEO-image.png";
 
 //#region Page styles
 const PageContainer = styled.div`
@@ -89,6 +90,7 @@ const InvitationPage = ({ pageContext }) => {
         <title>
           Your Invitation - {displayName} | Isaac & Ness' Wedding Website
         </title>
+        <meta property="og:image" content={socialImage} />
       </Helmet>
       <PageContainer>
         <Divider width="80px" />

@@ -14,6 +14,8 @@ import wheeler from "../images/wedding-party/wheeler-og.jpeg";
 import jordan from "../images/wedding-party/jordan.jpeg";
 import nathan from "../images/wedding-party/nathan-v2.jpeg";
 
+import socialImage from "../images/SEO-image.png";
+
 //#region Page styles
 const PageContainer = styled.div`
   display: flex;
@@ -135,6 +137,7 @@ const WeddingParty = () => {
     <Layout>
       <Helmet>
         <title>Wedding Party | Isaac & Ness' Wedding Website</title>
+        <meta property="og:image" content={socialImage} />
       </Helmet>
       <PageContainer>
         <Divider />

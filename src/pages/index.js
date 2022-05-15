@@ -8,6 +8,7 @@ import brick from "../images/brick.png";
 import chch from "../images/chch-2.png";
 import engagement from "../images/engagement-2.png";
 import Divider from "../components/Divider";
+import socialImage from "../images/SEO-image.png";
 
 //#region Page styles
 const PageContainer = styled.div`
@@ -98,6 +99,7 @@ const IndexPage = () => (
   <Layout>
     <Helmet>
       <title>Home | Isaac & Ness' Wedding Website</title>
+      <meta property="og:image" content={socialImage} />
     </Helmet>
     <PageContainer>
       <ImageBanner>

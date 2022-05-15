@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Divider from "../components/Divider";
 import ContactForm from "../components/contact-form";
+import socialImage from "../images/SEO-image.png";
 
 //#region Page styles
 const PageContainer = styled.div`
@@ -60,6 +61,7 @@ const RSVP = () => {
     <Layout>
       <Helmet>
         <title>RSVP | Isaac & Ness' Wedding Website</title>
+        <meta property="og:image" content={socialImage} />
       </Helmet>
       <PageContainer>
         <Divider width="80px" />

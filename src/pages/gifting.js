@@ -51,6 +51,7 @@ const Gifting = () => {
     <Layout>
       <Helmet>
         <title>Gifting | Isaac & Ness' Wedding Website</title>
+        <meta property="og:image" content={socialImage} />
       </Helmet>
       <PageContainer>
         <Divider width="80px" />

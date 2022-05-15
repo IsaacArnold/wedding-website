@@ -5,6 +5,7 @@ import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Layout from "../components/Layout";
 import wgc from "../images/wgc.jpeg";
+import socialImage from "../images/SEO-image.png";
 
 //#region Page styles
 const PageContainer = styled.div`
@@ -85,6 +86,7 @@ const Venue = () => {
     <Layout>
       <Helmet>
         <title>Venue | Isaac & Ness' Wedding Website</title>
+        <meta property="og:image" content={socialImage} />
       </Helmet>
       <PageContainer>
         <Divider />

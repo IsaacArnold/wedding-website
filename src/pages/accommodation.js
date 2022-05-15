@@ -5,6 +5,8 @@ import Divider from "../components/Divider";
 import KiwiKangaroo from "../components/KiwiKangaroo";
 import Layout from "../components/Layout";
 
+import socialImage from "../images/SEO-image.png";
+
 //#region Page styles
 const PageContainer = styled.div`
   display: flex;
@@ -85,6 +87,7 @@ const Accommodation = () => {
     <Layout>
       <Helmet>
         <title>Accommodation | Isaac & Ness' Wedding Website</title>
+        <meta property="og:image" content={socialImage} />
       </Helmet>
       <PageContainer>
         <Divider />
