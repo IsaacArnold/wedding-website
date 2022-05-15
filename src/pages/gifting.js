@@ -72,7 +72,10 @@ const Gifting = () => {
               If you would like to give us a gift that will remind us of our
               wedding day, we will have two options available.
             </p>
-            <p>A Wishing Well will be set up at the reception. </p>
+            <p>
+              A Wishing Well, in which you can gift money in an envelope, will
+              be set up at the reception.
+            </p>
             <p>
               If giving a physical gift is more your style we will be setting up
               a small gift registry with Myer. A link for this will be available
