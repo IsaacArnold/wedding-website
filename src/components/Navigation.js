@@ -146,10 +146,11 @@ const Navigation = () => {
       <MobileNavContainer id="dropdown" className="hidden">
         <div className="inner-mobile-nav">
           <MobileLink to={personalisedLink}>Your Invitation</MobileLink>
-          <MobileLink to="/rsvp">RSVP</MobileLink>
+          {/* <MobileLink to="/rsvp">RSVP</MobileLink> */}
           <MobileLink to="/venue">Venue</MobileLink>
           <MobileLink to="/accommodation">Accommodation</MobileLink>
           <MobileLink to="/wedding-party">Wedding Party</MobileLink>
+          <MobileLink to="/sunday">Sunday</MobileLink>
           <MobileLink to="/gifting">Gifting</MobileLink>
         </div>
       </MobileNavContainer>
@@ -157,10 +158,11 @@ const Navigation = () => {
         <div className="inner-laptop-nav">
           <Divider width="60px" />
           <LaptopLink to={personalisedLink}>Your Invitation</LaptopLink>
-          <LaptopLink to="/rsvp">RSVP</LaptopLink>
+          {/* <LaptopLink to="/rsvp">RSVP</LaptopLink> */}
           <LaptopLink to="/venue">Venue</LaptopLink>
           <LaptopLink to="/accommodation">Accommodation</LaptopLink>
           <LaptopLink to="/wedding-party">Wedding Party</LaptopLink>
+          <LaptopLink to="/sunday">Sunday</LaptopLink>
           <LaptopLink to="/gifting">Gifting</LaptopLink>
           <Divider width="60px" />
         </div>
