@@ -39,6 +39,24 @@ const ContentContainer = styled.div`
       margin-bottom: 12px;
     }
   }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    width: 200px;
+    margin: 20px auto;
+    background-color: var(--weddingGreen);
+    color: var(--offWhite);
+    border: none;
+    padding: 15px 30px;
+    align-self: center;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    @media (min-width: 768px) {
+      align-self: flex-start;
+    }
+  }
 `;
 
 const KiwiKanga = styled.div`
@@ -77,10 +95,18 @@ const Gifting = () => {
               be set up at the reception.
             </p>
             <p>
-              If giving a physical gift is more your style we will be setting up
-              a small gift registry with Myer. A link for this will be available
-              on this page in August.
+              If giving a physical gift is more your style we have set up a gift
+              registry - please click on the button below to view.
             </p>
+            <a
+              href="https://docs.google.com/document/d/1oOUTKTvwO_z6xiVcVlQcPnYWDLTm4dcrHInjezsd0nA/edit?usp=sharing"
+              target="_blank"
+              className="btn"
+              rel="noreferrer"
+            >
+              View gift registry
+            </a>
+            <p>If you have any questions, please let us know.</p>
           </div>
         </ContentContainer>
         <KiwiKanga>
