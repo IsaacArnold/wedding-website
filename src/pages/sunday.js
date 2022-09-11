@@ -77,8 +77,7 @@ const Sunday = () => {
           </div>
           <div className="body">
             <p>
-              We are getting close to our wedding day now - only two months to
-              go!{" "}
+              We are getting close to our wedding day now!
             </p>
             <p>
               We just wanted to send a quick message to let you know that we
